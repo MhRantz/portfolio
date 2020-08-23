@@ -53,20 +53,11 @@ button {
 	outline: none;
 	font-size: 1rem;
 }
-
 /**************************************************
 GENERAL STYLES AND VARIABLES/MIXIN 
 **************************************************/
-
-html {
-    font-size: 125%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    background-color: #EEEAE9;
-}
-
-
 $primary: black;
+$lightPrime: #EEEAE9;
 $line: 2px;
 $wrapperOne: 75px;
 
@@ -76,6 +67,17 @@ $wrapperOne: 75px;
     border-bottom: $line solid $primary;
 }
 
+html {
+    font-size: 125%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: $lightPrime;
+}
+
+a {
+	text-decoration: none;
+    color: $primary;
+}
 
 /**************************************************
 DESIGN ONLY
@@ -88,4 +90,8 @@ DESIGN ONLY
 	bottom: 0;
 	left: 30vw;
 	z-index: -1;
+}
+
+nav .designOnlyOne {
+	bottom: calc(100vh - 75px);
 }

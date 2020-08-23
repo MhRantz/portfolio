@@ -1,5 +1,6 @@
 @import 'setup';
 @import 'nav';
+@import 'volumes';
 
 header {
     height: 100vh;
@@ -38,12 +39,16 @@ header a {
     margin-bottom: 75px;
     padding: 12px 32px;
     border: $line solid $primary;
-    text-decoration: none;
-    color: $primary;
+}
+
+header a:hover {
+    background-color: black;
+    color: $lightPrime;
+    transition: all 0.3s;
 }
 
 main {
-    height: 150vh;
+    height: 75vh;
     margin-top: 100px;
     padding: 0 $wrapperOne;
 }
@@ -62,13 +67,27 @@ main {
     width: calc(100% - 150px);
     height: 50vh;
     margin: -135px 0 0 150px;
-    background-color: blue;
 }
 
 .project {
-    padding: 7%;
+    padding: 50px 7% 0 7%;
+}
+
+.projectContent ul {
+    margin-top: 5px;
+}
+
+.projectContent li {
+    display: inline;
 }
 
 h4 {
     font-size: 1.75rem;
+}
+
+
+@media (max-width: 650px) {
+    nav ul {
+        display: none;
+    }
 }

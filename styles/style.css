@@ -69,6 +69,11 @@ html {
   background-color: #EEEAE9;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /**************************************************
 DESIGN ONLY
 **************************************************/
@@ -79,6 +84,10 @@ DESIGN ONLY
   bottom: 0;
   left: 30vw;
   z-index: -1;
+}
+
+nav .designOnlyOne {
+  bottom: calc(100vh - 75px);
 }
 
 /**************************************************
@@ -181,13 +190,24 @@ nav li:last-of-type:hover::before {
 }
 
 nav li:hover, nav li:hover a {
-  color: white;
-  background-color: tomato;
+  color: #EEEAE9;
+  background-color: black;
+}
+
+nav li:last-of-type:hover {
+  border-bottom: 2px solid black;
+  background-color: none;
+  background: none;
+}
+
+nav li:last-of-type:hover .volume {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .volume {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border: 2px solid black;
   border-radius: 50%;
   color: black;
@@ -200,8 +220,20 @@ nav li:hover, nav li:hover a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: -7px 0 0 2px;
-  font-size: 0.9rem;
+  margin: -5px 0 0 0;
+  font-size: 0.8rem;
+}
+
+.volume2 {
+  background-color: tomato;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.volume3 {
+  background-color: mediumseagreen;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 header {
@@ -247,12 +279,17 @@ header a {
   margin-bottom: 75px;
   padding: 12px 32px;
   border: 2px solid black;
-  text-decoration: none;
-  color: black;
+}
+
+header a:hover {
+  background-color: black;
+  color: #EEEAE9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 main {
-  height: 150vh;
+  height: 75vh;
   margin-top: 100px;
   padding: 0 75px;
 }
@@ -273,13 +310,26 @@ main {
   width: calc(100% - 150px);
   height: 50vh;
   margin: -135px 0 0 150px;
-  background-color: blue;
 }
 
 .project {
-  padding: 7%;
+  padding: 50px 7% 0 7%;
+}
+
+.projectContent ul {
+  margin-top: 5px;
+}
+
+.projectContent li {
+  display: inline;
 }
 
 h4 {
   font-size: 1.75rem;
+}
+
+@media (max-width: 650px) {
+  nav ul {
+    display: none;
+  }
 }
