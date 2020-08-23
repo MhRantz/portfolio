@@ -46,3 +46,46 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+button {
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+}
+
+/**************************************************
+GENERAL STYLES AND VARIABLES/MIXIN 
+**************************************************/
+
+html {
+    font-size: 125%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #EEEAE9;
+}
+
+
+$primary: black;
+$line: 2px;
+$wrapperOne: 75px;
+
+@mixin borders() {
+    border-left: $line solid $primary;
+    border-right: $line solid $primary;
+    border-bottom: $line solid $primary;
+}
+
+
+/**************************************************
+DESIGN ONLY
+**************************************************/
+
+.designOnlyOne{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 30vw;
+	z-index: -1;
+}
