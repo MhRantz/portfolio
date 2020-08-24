@@ -1,9 +1,17 @@
 .volume2 {
-    background-color: tomato;
+    background-color:tomato;
     transition: background 0.3s;
 }
 
-.volume3 {
-    background-color: mediumseagreen;
+div.volume3 {
+    background-color: rgb(1, 198, 178);
     transition: background 0.3s;
 }
+
+/*body.volume3, a.volume3 {
+    color: rgb(2, 33, 99);
+}*/
+
+/*li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(4), li:nth-of-type(5) -borders */
+
+/*.projectContent a, .volume, header a, .about -border */

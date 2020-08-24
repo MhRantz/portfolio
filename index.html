@@ -17,8 +17,8 @@
         <ul>
             <li>About</li>
             <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="mailto:meganrantz@gmail.com">Contact</a></li>
             <li><a href="https://github.com/MhRantz?tab=repositories">Github</a></li>
             <li id="volumeParent">
                 <div class="volume"><span id="volumeContent">Vol. 1</span></div>
@@ -31,61 +31,91 @@
         <a href="mailto:meganrantz@gmail.com">Email Me</a>
     </header>
     <main>
-        <section class="projects">
+        <section class="about">
+            <p>A Developer with a passion for building smart, beautiful things</p>
+        </section>
+        <section id="projects " class="projects">
             <h3>+ Projects</h3>
             <ul class="projectParent">
                 <li class="project">
-                    <div class=projectContent>
+                    <a href="https://mhrantz.github.io/tsundoku/">
+                        <h4>Tsundoku</h4>
+                    </a>
+                    <ul class="languagesUsed">
+                        <li>React</li>
+                        <li>Javascript</li>
+                        <li>API</li>
+                        <li>Firebase</li>
+                    </ul>
+                    <div class="projectContent">
                         <a href="https://mhrantz.github.io/tsundoku/">
-                            <h4>Tsundoku</h4>
-                            <ul class="languagesUsed">
-                                <li>React</li>
-                                <li>Javascript</li>
-                                <li>API</li>
-                                <li>Firebase</li>
-                            </ul>
+                            <img src="./assets/tsundoku.jpg" alt="Screenshot of Tsundoku app">
+                            <span>Live</span>
                         </a>
+                        <p>Tsundoku is a fresh take on a reading list app. Add books to your stack to read, and once
+                            you've read the book, move it to your finished books stack. Browse books from recent
+                            trending book in multiple genres.</p>
                     </div>
                     <!--End projectContent-->
                 </li>
                 <li class="project">
-                    <div class=projectContent>
+                    <a href="https://meganrantz.io/beesKnees/">
+                        <h4>Bees Knees</h4>
+                    </a>
+                    <ul class="languagesUsed">
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>Sass</li>
+                    </ul>
+                    <div class="projectContent">
                         <a href="https://meganrantz.io/beesKnees/">
-                            <h4>Bees Knees</h4>
-                            <ul class="languagesUsed">
-                                <li>Javascript</li>
-                                <li>JQuery</li>
-                                <li>Sass</li>
-                            </ul>
+                            <img src="./assets/beesKnees.jpg" alt="Screenshot of Bees Knees page">
+                            <span>Live</span>
                         </a>
+                        <p>Bees Knees is a lighthearted game that asks you to guess whether a provided term is 1920's
+                            slang, the name of a cocktail, or both. The results are shown, and the correct definition or
+                            recipe are listed below. </p>
                     </div>
                     <!--End projectContent-->
                 </li>
                 <li class="project">
-                    <div class=projectContent>
+                    <a href="https://backronym.github.io/backronym/">
+                        <h4>Backronyms</h4>
+                    </a>
+                    <ul class="languagesUsed">
+                        <li>React</li>
+                        <li>Javascript</li>
+                        <li>API</li>
+                        <li>Firebase</li>
+                    </ul>
+                    <div class="projectContent">
                         <a href="https://backronym.github.io/backronym/">
-                            <h4>Backronyms</h4>
-                            <ul class="languagesUsed">
-                                <li>React</li>
-                                <li>Javascript</li>
-                                <li>API</li>
-                                <li>Firebase</li>
-                            </ul>
-                        </a>
+                            <img src="./assets/backronyms.jpg" alt="Screenshot of backronyms app">
+                            <span>Live</span></a>
+                        <p>A generator that converts a user inputted word into a backronym, an acronym that is formed
+                            out of a regular word or set of letters. Often used as a study aid, like "Every Good Boy
+                            Deserves Fudge" for the musical notes. The generator provides word suggestions based off
+                            each previous chosen word.</p>
                     </div>
                     <!--End projectContent-->
                 </li>
                 <li class="project">
-                    <div class=projectContent>
+                    <a href="https://meganrantz.io/gameScope/">
+                        <h4>Game Scope</h4>
+                    </a>
+                    <ul class="languagesUsed">
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>API</li>
+                        <li>Sass</li>
+                    </ul>
+                    <div class="projectContent">
                         <a href="https://meganrantz.io/gameScope/">
-                            <h4>Game Scope</h4>
-                            <ul class="languagesUsed">
-                                <li>Javascript</li>
-                                <li>JQuery</li>
-                                <li>API</li>
-                                <li>Sass</li>
-                            </ul>
+                            <img src="./assets/gameScope.jpg" alt="Screenshot of game scope app">
+                            <span>Live</span>
                         </a>
+                        <p>Game Scope updates you on all upcoming video games in your favourite genres. You can change
+                            the chosen genre, and find more details on each game by pressing its card.</p>
                     </div>
                     <!--End projectContent-->
                 </li>
@@ -94,6 +124,9 @@
             <!--End projectParent-->
         </section>
     </main>
+    <footer>
+        <p>Copyright &copy; Megan Rantz 2020</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

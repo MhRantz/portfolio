@@ -62,11 +62,12 @@ button {
 /**************************************************
 GENERAL STYLES AND VARIABLES/MIXIN 
 **************************************************/
-html {
+body {
   font-size: 125%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #EEEAE9;
+  color: black;
 }
 
 a {
@@ -83,7 +84,7 @@ DESIGN ONLY
   right: 0;
   bottom: 0;
   left: 30vw;
-  z-index: -1;
+  z-index: -99;
 }
 
 nav .designOnlyOne {
@@ -99,6 +100,7 @@ nav {
   position: fixed;
   top: 0;
   left: 2%;
+  z-index: 10;
   border-bottom: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +124,6 @@ nav ul {
 
 nav ul li {
   padding: 5px 0 0 5px;
-  color: black;
   cursor: pointer;
 }
 
@@ -168,7 +169,6 @@ nav ul li:nth-of-type(5) {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
 }
 
 nav ul li:last-of-type {
@@ -203,14 +203,13 @@ nav li:last-of-type:hover {
 nav li:last-of-type:hover .volume {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  color: black;
 }
 
 .volume {
   width: 48px;
   height: 48px;
-  border: 2px solid black;
   border-radius: 50%;
-  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,21 +220,13 @@ nav li:last-of-type:hover .volume {
       -ms-flex-align: center;
           align-items: center;
   margin: -5px 0 0 0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  border: 2px solid black;
 }
 
-.volume2 {
-  background-color: tomato;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-.volume3 {
-  background-color: mediumseagreen;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
+/**************************************************
+HEADER
+**************************************************/
 header {
   height: 100vh;
   padding: 0 75px;
@@ -248,7 +239,7 @@ header {
           flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -260,7 +251,6 @@ header p {
 }
 
 h1 {
-  color: black;
   font-size: 8.5rem;
 }
 
@@ -272,7 +262,6 @@ h1 span {
 h2 {
   font-size: 1.75rem;
   margin: -5px 0 10px 12px;
-  color: black;
 }
 
 header a {
@@ -289,7 +278,6 @@ header a:hover {
 }
 
 main {
-  height: 75vh;
   margin-top: 100px;
   padding: 0 75px;
 }
@@ -308,24 +296,167 @@ main {
 
 .projectParent {
   width: calc(100% - 150px);
-  height: 50vh;
   margin: -135px 0 0 150px;
 }
 
 .project {
-  padding: 50px 7% 0 7%;
+  padding: 50px 0 0 7%;
 }
 
-.projectContent ul {
+.languagesUsed {
   margin-top: 5px;
+  padding-bottom: 5px;
+  width: 98%;
+  border-bottom: 2px solid black;
+  position: relative;
 }
 
-.projectContent li {
+.languagesUsed:after {
+  content: "+";
+  font-size: 1.6rem;
+  position: absolute;
+  right: -17px;
+  bottom: -15px;
+}
+
+.languagesUsed li {
   display: inline;
+}
+
+.projectContent {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.projectContent p {
+  line-height: 1.3rem;
+  width: 40%;
+}
+
+.projectContent a {
+  width: 450px;
+  height: 275px;
+  margin: 0 10px;
+  padding: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+}
+
+.projectContent a span {
+  display: none;
+}
+
+.projectContent a:hover {
+  background-color: black;
+}
+
+.projectContent a:hover img {
+  display: none;
+}
+
+.projectContent a:hover span {
+  display: inline-block;
+  width: 450px;
+  font-size: 1.75rem;
+  color: #EEEAE9;
+  text-align: center;
 }
 
 h4 {
   font-size: 1.75rem;
+}
+
+.volume2 {
+  background-color: tomato;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+div.volume3 {
+  background-color: #01c6b2;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+/*body.volume3, a.volume3 {
+    color: rgb(2, 33, 99);
+}*/
+/*li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(4), li:nth-of-type(5) -borders */
+/*.projectContent a, .volume, header a, .about -border */
+.about {
+  height: 200px;
+  width: 100%;
+  margin: 75px 0 125px 0;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about p {
+  font-size: 1.75rem;
+  padding: 0 20px;
+}
+
+footer {
+  width: 98%;
+  margin-left: 2%;
+  border-top: 2px solid black;
+  margin-top: 150px;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  line-height: 4rem;
+}
+
+@media (max-width: 1055px) {
+  header, main {
+    padding: 0 25px;
+  }
+  .projectContent a {
+    width: 275px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 790px) {
+  .projects h3 {
+    font-size: 4rem;
+  }
+  .projectContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectContent p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .projectContent a {
+    margin: 0 0;
+  }
 }
 
 @media (max-width: 650px) {

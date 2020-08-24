@@ -1,0 +1,90 @@
+main {
+    margin-top: 100px;
+    padding: 0 $wrapperOne;
+}
+
+.projects h3{
+    font-size: 6rem;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    display: inline-block;
+    padding-top: 12.5px;
+    margin-left: 150px;
+    border-top: $line solid $primary;
+}
+
+.projectParent {
+    width: calc(100% - 150px);
+    margin: -135px 0 0 150px;
+}
+
+.project {
+    padding: 50px 0 0 7%;
+}
+
+.languagesUsed {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    width: 98%;
+    border-bottom: $line solid $primary;
+    position: relative;
+}
+
+.languagesUsed:after {
+    content: "+";
+    font-size: 1.6rem;
+    position: absolute;
+    right: -17px;
+    bottom: -15px;
+}
+
+.languagesUsed li {
+    display: inline;
+}
+
+.projectContent {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.projectContent p {
+    line-height: 1.3rem;
+    width: 40%;
+}
+
+.projectContent a {
+    width: 450px;
+    height: 275px;
+    margin: 0 10px;
+    padding: 5px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    @include border;
+}
+
+.projectContent a span {
+    display: none;
+}
+
+
+.projectContent a:hover {
+    background-color: black;
+}
+
+.projectContent a:hover img {
+    display: none;
+}
+
+.projectContent a:hover span{
+    display: inline-block;
+    width: 450px;
+    font-size: 1.75rem;
+    color: $lightPrime;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.75rem;
+}

@@ -6,6 +6,7 @@ const app = {}
 app.volumeContent = $('#volumeContent');
 app.volumeParent = $('#volumeParent');
 app.designOne = $('.designOnlyOne');
+app.projectDrop = $('.languagesUsed');
 ///GLOBALS
 app.volumeNum = 1
 app.numDesigns = 3
@@ -24,22 +25,34 @@ app.volume = function() {
             app.designOne.addClass('volume2');
         } else if(app.volumeNum === 3) {
             app.designOne.removeClass('volume2').addClass('volume3');
+            $('body').addClass('volume3');
+            $('a').addClass('volume3');
         } else {
             app.designOne.removeClass('volume3');
+            $('body').removeClass('volume3');
+            $('a').removeClass('volume3'); 
         }
     })
 }
 
-//VOLUME NUMBER CHANGES
-
+//TOGGLE SHOWING PROJECT DETAILS
+app.projectDrops = function(){
+    app.projectDrop.on('click', function(){
+        $(this).siblings('.projectContent').toggle();
+    })
+}
 
 ///INIT
 app.init = function() {
     app.volume();
+    app.projectDrops();
 }
+
+app.projectDrop.siblings('.projectContent').hide();
 
 ///DOCUMENT READY
 $(function(){
     app.init();
-    console.log('Fancy seeing you here. If you want to try something more fun, try clicking the Vol. number');
+    console.log('Fancy seeing you here. If you would like to try something more fun, try clicking the Vol. number');
+    
 })

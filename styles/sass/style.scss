@@ -1,90 +1,66 @@
 @import 'setup';
-@import 'nav';
+@import 'navHeader';
+@import 'projects';
 @import 'volumes';
 
-header {
-    height: 100vh;
-    padding: 0 $wrapperOne;
+.about {
+    height: 200px;
+    width: 100%;
+    margin: 75px 0 125px 0;
+    @include border;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start
-
-    //background: linear-gradient(90deg, rgba(249,243,241,1) 27.5%, rgba(251,97,66,1) 27.5%);
+    justify-content: center;
+    align-items: center;
 }
 
-header p {
-    font-size: 1.3rem;
-    margin: 0 0 15px 13px;
+.about p {
+    font-size: 1.75rem;
+    padding: 0 20px;
 }
 
-h1 {
-    color: $primary;
-    font-size: 8.5rem;
+footer {
+    width: 98%;
+    margin-left: 2%;
+    border-top: $line solid $primary;
+    margin-top: 150px;
+}
 
-    span {
-        display: block;
-        margin-top: -30px;
+footer p {
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+}
+
+@media (max-width: 1055px) {
+    header, main {
+        padding: 0 25px;
+    }
+    
+    .projectContent a {
+        width: 275px;
+        height: 170px;
     }
 }
 
-h2 {
+@media (max-width: 790px) {
     
-    font-size: 1.75rem;
-    margin: -5px 0 10px 12px;
-    color: $primary;
-}
+    .projects h3 {
+        font-size: 4rem;
+    }
 
-header a {
-    margin-bottom: 75px;
-    padding: 12px 32px;
-    border: $line solid $primary;
-}
+    .projectContent {
+        flex-direction: column-reverse;
+    }
 
-header a:hover {
-    background-color: black;
-    color: $lightPrime;
-    transition: all 0.3s;
-}
+    .projectContent p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-main {
-    height: 75vh;
-    margin-top: 100px;
-    padding: 0 $wrapperOne;
+    .projectContent a {
+        margin: 0 0;
+    }
 }
-
-.projects h3{
-    font-size: 6rem;
-    transform: rotate(90deg);
-    transform-origin: top left;
-    display: inline-block;
-    padding-top: 12.5px;
-    margin-left: 150px;
-    border-top: $line solid $primary;
-}
-
-.projectParent {
-    width: calc(100% - 150px);
-    height: 50vh;
-    margin: -135px 0 0 150px;
-}
-
-.project {
-    padding: 50px 7% 0 7%;
-}
-
-.projectContent ul {
-    margin-top: 5px;
-}
-
-.projectContent li {
-    display: inline;
-}
-
-h4 {
-    font-size: 1.75rem;
-}
-
 
 @media (max-width: 650px) {
     nav ul {
