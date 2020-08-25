@@ -3,13 +3,23 @@ main {
     padding: 0 $wrapperOne;
 }
 
-.projects h3{
+h3 {
+    font-family: 'Abril Fatface', cursive;
     font-size: 6rem;
+}
+
+/**************************************************
+PROJECTS SECTION
+**************************************************/
+
+.projects h3{
+    
+    
     transform: rotate(90deg);
     transform-origin: top left;
     display: inline-block;
     padding-top: 12.5px;
-    margin-left: 150px;
+    margin-left: 100px;
     border-top: $line solid $primary;
 }
 

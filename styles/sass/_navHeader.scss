@@ -94,8 +94,13 @@ nav li:last-of-type:hover .volume {
     justify-content: center;
     align-items: center;
     margin: -5px 0 0 0;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     @include border;
+    font-family:  'Abril Fatface', cursive;
+}
+
+.burger {
+    display: none;
 }
 /**************************************************
 HEADER
@@ -116,6 +121,7 @@ header p {
 
 h1 {
     font-size: 8.5rem;
+    font-family: 'Abril Fatface', cursive;
 
     span {
         display: block;
@@ -126,7 +132,7 @@ h1 {
 h2 {
     
     font-size: 1.75rem;
-    margin: -5px 0 10px 12px;
+    margin: -5px 0 10px 0;
 }
 
 header a {

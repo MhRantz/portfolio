@@ -9,7 +9,7 @@ app.designOne = $('.designOnlyOne');
 app.projectDrop = $('.languagesUsed');
 ///GLOBALS
 app.volumeNum = 1
-app.numDesigns = 3
+app.numDesigns = 4
 
 ///VOLUME CLICK FUNCTION
 app.volume = function() {
@@ -26,11 +26,13 @@ app.volume = function() {
         } else if(app.volumeNum === 3) {
             app.designOne.removeClass('volume2').addClass('volume3');
             $('body').addClass('volume3');
-            $('a').addClass('volume3');
-        } else {
-            app.designOne.removeClass('volume3');
+            $('nav').addClass('volume3');
+        } else if(app.volumeNum === 4) {
+            app.designOne.removeClass('volume3').addClass('volume4');
             $('body').removeClass('volume3');
-            $('a').removeClass('volume3'); 
+            $('nav').removeClass('volume3'); 
+        } else {
+            app.designOne.removeClass('volume4');
         }
     })
 }
@@ -48,11 +50,11 @@ app.init = function() {
     app.projectDrops();
 }
 
-app.projectDrop.siblings('.projectContent').hide();
+
 
 ///DOCUMENT READY
 $(function(){
     app.init();
     console.log('Fancy seeing you here. If you would like to try something more fun, try clicking the Vol. number');
-    
+    app.projectDrop.siblings('.projectContent').hide();
 })
