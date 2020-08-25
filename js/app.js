@@ -7,6 +7,7 @@ app.volumeContent = $('#volumeContent');
 app.volumeParent = $('#volumeParent');
 app.designOne = $('.designOnlyOne');
 app.projectDrop = $('.languagesUsed');
+app.burger = $('#burger');
 ///GLOBALS
 app.volumeNum = 1
 app.numDesigns = 4
@@ -37,7 +38,21 @@ app.volume = function() {
     })
 }
 
-//TOGGLE SHOWING PROJECT DETAILS
+///BURGER!
+app.burgerDrop = function() {
+    app.burger.on('click', function(){
+        $('nav').addClass('burgerClicked');
+    })
+    
+}
+
+app.burgerClose = function() {
+    $('nav ul').on('click', function() {
+        $('nav').removeClass('burgerClicked');
+    })
+}
+
+///TOGGLE SHOWING PROJECT DETAILS
 app.projectDrops = function(){
     app.projectDrop.on('click', function(){
         $(this).siblings('.projectContent').toggle();
@@ -47,6 +62,8 @@ app.projectDrops = function(){
 ///INIT
 app.init = function() {
     app.volume();
+    app.burgerDrop();
+    app.burgerClose();
     app.projectDrops();
 }
 
