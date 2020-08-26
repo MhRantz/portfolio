@@ -17,8 +17,6 @@ PROJECTS SECTION
 }
 
 .projects h3{
-    
-    
     transform: rotate(90deg);
     transform-origin: top left;
     display: inline-block;
@@ -38,7 +36,6 @@ PROJECTS SECTION
 
 .languagesUsed {
     margin-top: 5px;
-    padding-bottom: 5px;
     width: 98%;
     border-bottom: $line solid $primary;
     position: relative;
@@ -53,7 +50,19 @@ PROJECTS SECTION
 }
 
 .languagesUsed li {
-    display: inline;
+    display: inline-block;
+    padding-bottom: 5px;
+    
+    &:last-of-type {
+        border-left: $line solid $primary;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: black;
+            color: $lightPrime;
+        }
+    }
 }
 
 .projectContent {
@@ -65,9 +74,16 @@ PROJECTS SECTION
 .projectContent p {
     line-height: 1.3rem;
     width: 40%;
+
+    a {
+        display: block;
+        margin-top: 15px;
+        padding-top: 5px;
+        border-top: $line solid $primary;
+    }
 }
 
-.projectContent a {
+.projectContent div a {
     width: 450px;
     height: 275px;
     margin: 0 10px;
@@ -76,27 +92,26 @@ PROJECTS SECTION
     display: flex;
     align-items: center;
     @include border;
+
+    span {
+        display: none;
+    }
 }
 
-.projectContent a span {
-    display: none;
-}
-
-
-.projectContent a:hover {
+.projectContent div a:hover {
     background-color: black;
-}
 
-.projectContent a:hover img {
-    display: none;
-}
+    img {
+        display: none;
+    }
 
-.projectContent a:hover span{
-    display: inline-block;
-    width: 450px;
-    font-size: 1.75rem;
-    color: $lightPrime;
-    text-align: center;
+    span{
+        display: inline-block;
+        width: 450px;
+        font-size: 1.75rem;
+        color: $lightPrime;
+        text-align: center;
+    }
 }
 
 h4 {

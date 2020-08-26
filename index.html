@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meg+Ran</title>
+    <title>Megan Rantz</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico' />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Abril+Fatface&pdisplay=swap"
         rel=" stylesheet">
     <script src="https://kit.fontawesome.com/f4dbc0390b.js" crossorigin="anonymous"></script>
@@ -16,14 +17,15 @@
     <nav>
         <div class="designOnlyOne"></div>
         <ul>
-            <li><a href="#projects">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="mailto:meganrantz@gmail.com">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="https://github.com/MhRantz?tab=repositories">Github</a></li>
             <li id="volumeParent">
                 <div class="volume"><span id="volumeContent">Vol. 1</span></div>
             </li>
+            <li class="close">Close</li>
         </ul>
         <div id="burger" class="burger">
             <span></span>
@@ -37,7 +39,7 @@
         <a href="mailto:meganrantz@gmail.com">Email Me</a>
     </header>
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <p>A Developer with a passion for building beautiful, smart things,</p>
         </section>
         <section id="projects" class="projects">
@@ -52,15 +54,19 @@
                         <li>Javascript</li>
                         <li>API</li>
                         <li>Firebase</li>
+                        <li>Details</li>
                     </ul>
                     <div class="projectContent">
-                        <a href="https://mhrantz.github.io/tsundoku/">
-                            <img src="./assets/tsundoku.jpg" alt="Screenshot of Tsundoku app">
-                            <span>Live</span>
-                        </a>
+                        <div>
+                            <a href="https://mhrantz.github.io/tsundoku/">
+                                <img src="./assets/tsundoku.jpg" alt="Screenshot of Tsundoku app">
+                                <span>Live</span>
+                            </a>
+                        </div>
                         <p>Tsundoku is a fresh take on a reading list app. Add books to your stack to read, and once
                             you've read the book, move it to your finished books stack. Browse books from recent
-                            trending book in multiple genres.</p>
+                            trending book in multiple genres.<a href="">+ Repo</a></p>
+
                     </div>
                     <!--End projectContent-->
                 </li>
@@ -72,15 +78,18 @@
                         <li>Javascript</li>
                         <li>JQuery</li>
                         <li>Sass</li>
+                        <li>Details </li>
                     </ul>
                     <div class="projectContent">
-                        <a href="https://meganrantz.io/beesKnees/">
-                            <img src="./assets/beesKnees.jpg" alt="Screenshot of Bees Knees page">
-                            <span>Live</span>
-                        </a>
+                        <div>
+                            <a href="https://meganrantz.io/beesKnees/">
+                                <img src="./assets/beesKnees.jpg" alt="Screenshot of Bees Knees page">
+                                <span>Live</span>
+                            </a>
+                        </div>
                         <p>Bees Knees is a lighthearted game that asks you to guess whether a provided term is 1920's
                             slang, the name of a cocktail, or both. The results are shown, and the correct definition or
-                            recipe are listed below. </p>
+                            recipe are listed below.<a href="">+ Repo</a></p>
                     </div>
                     <!--End projectContent-->
                 </li>
@@ -93,15 +102,19 @@
                         <li>Javascript</li>
                         <li>API</li>
                         <li>Firebase</li>
+                        <li>Details</li>
                     </ul>
                     <div class="projectContent">
-                        <a href="https://backronym.github.io/backronym/">
-                            <img src="./assets/backronyms.jpg" alt="Screenshot of backronyms app">
-                            <span>Live</span></a>
+                        <div>
+                            <a href="https://backronym.github.io/backronym/">
+                                <img src="./assets/backronyms.jpg" alt="Screenshot of backronyms app">
+                                <span>Live</span>
+                            </a>
+                        </div>
                         <p>A generator that converts a user inputted word into a backronym, an acronym that is formed
                             out of a regular word or set of letters. Often used as a study aid, like "Every Good Boy
                             Deserves Fudge" for the musical notes. The generator provides word suggestions based off
-                            each previous chosen word.</p>
+                            each previous chosen word.<a href="">+ Repo</a></p>
                     </div>
                     <!--End projectContent-->
                 </li>
@@ -114,14 +127,18 @@
                         <li>JQuery</li>
                         <li>API</li>
                         <li>Sass</li>
+                        <li>Details</li>
                     </ul>
                     <div class="projectContent">
-                        <a href="https://meganrantz.io/gameScope/">
-                            <img src="./assets/gameScope.jpg" alt="Screenshot of game scope app">
-                            <span>Live</span>
-                        </a>
+                        <div>
+                            <a href="https://meganrantz.io/gameScope/">
+                                <img src="./assets/gameScope.jpg" alt="Screenshot of game scope app">
+                                <span>Live</span>
+                            </a>
+                        </div>
                         <p>Game Scope updates you on all upcoming video games in your favourite genres. You can change
-                            the chosen genre, and find more details on each game by pressing its card.</p>
+                            the chosen genre, and find more details on each game by pressing its card.<a href="">+
+                                Repo</a></p>
                     </div>
                     <!--End projectContent-->
                 </li>
@@ -130,7 +147,7 @@
             <!--End projectParent-->
         </section>
         <section class="about">
-            <p>And a history of creating technological magic.</p>
+            <p>and a history of creating technological magic.</p>
         </section>
         <section id="skills" class="skills">
             <h3>+ Skills</h3>
@@ -147,6 +164,14 @@
                 <li><span>Illustrator</span></li>
                 <li><span>SQL</span></li>
             </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h3>+ Contact</h3>
+            <div>
+                <a href="www.linkedin.com/in/megan-rantz-4b942bb2">Linkedin</a>
+                <a href="mailto:meganrantz@gmail.com">Email</a>
+                <a href="https://calendly.com/meganrantz">Calendly</a>
+            </div>
         </section>
     </main>
     <footer>

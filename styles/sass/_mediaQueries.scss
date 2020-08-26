@@ -1,0 +1,171 @@
+@media (max-width: 1055px) {
+    header, main {
+        padding: 0 25px;
+    }
+
+    .projects h3 {
+        margin-left: 125px;
+    }
+    
+    .projectContent div a {
+        width: 275px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 790px) {
+    
+    .projects h3 {
+        font-size: 4rem;
+    }
+
+    .projectContent {
+        flex-direction: column-reverse;
+        width: 97%;
+        margin-left: 3%;
+    }
+
+    .projectContent p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projectContent div a {
+        margin: 0 0;
+    }
+}
+
+@media (max-width: 650px) {
+
+    nav, nav .designOnlyOne {
+        height: 50px;
+    }
+    
+    nav ul {
+        grid-template-columns: 75px 90px 90px 25px;
+        grid-template-rows: 40px 40px;
+        display: none;
+        position: relative;
+
+        li.close {
+            position: absolute;
+            top: 5px;
+            left: -11px;
+            display: block;
+            transform: rotate(90deg);
+            transform-origin: left;
+            font-family: 'Abril Fatface', cursive;
+            font-size: 0.95rem;
+        }
+    }
+
+    .volume {
+        border: none;
+        transform: rotate(90deg);
+        margin: 9px 0 0 -15px;
+        background: none;
+    }
+
+    nav li:last-of-type:hover {
+        border: none;
+    }
+
+    nav li:nth-of-type(6):hover .volume {
+        transform: rotate(90deg);
+
+    }
+
+    nav li:hover a::before {
+        content: "";
+    }
+
+    
+
+    .burger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+
+    .burger span {
+        display: block;
+        width: 50px;
+        height: 3px;
+        margin: 2.5px 0;
+        background: black;
+        transition: 0.2s ease-in;
+    }
+
+    .burger span:nth-of-type(1) {
+        margin-top: 0;
+    }
+
+    .burger span:nth-of-type(3) {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .burger:hover span:nth-of-type(3) {
+        width: 50px;
+        margin-left: 0;
+    }
+
+    .burger:hover  span:nth-of-type(1) {
+        width: 30px;
+    }
+
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    nav.burgerClicked .burger{
+        display: none;
+    }
+    
+    nav.burgerClicked {
+        height: 95px;
+    }
+
+    nav.burgerClicked .designOnlyOne {
+        height: 95px;
+    }
+
+    nav.burgerClicked ul {
+        display: grid;
+    }
+
+    nav ul li.close:hover {
+        background: none;
+        color: $primary;
+    }
+
+    .projects h3 {
+        transform: none;
+        border: none;
+        margin: 0 0 50px 0;
+        padding: 0;
+        font-size: 6rem;
+    }
+
+    .projectParent {
+        width: 100%;
+        margin: 0;
+    }
+
+    .designOnlyOne {
+        left: 15vw;
+    }
+
+    h1 {
+        font-size: 6.5rem;
+
+        span {
+            margin-top: -15px;
+        }
+    }
+
+}
