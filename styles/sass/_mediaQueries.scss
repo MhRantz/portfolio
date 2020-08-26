@@ -156,6 +156,10 @@
         margin: 0;
     }
 
+    .project {
+        padding-left: 0;
+    }
+
     .designOnlyOne {
         left: 15vw;
     }
@@ -168,4 +172,31 @@
         }
     }
 
+    header a {
+        margin-bottom: 150px;
+    }
+
+}
+
+@media (max-width: 500px) { 
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .projects h3, h3 {
+        font-size: 4rem;
+    }
+    
+    .about p {
+        font-size: 2rem;
+    }
+
+    .contact div a {
+        font-size: 1.25rem;
+    }
 }

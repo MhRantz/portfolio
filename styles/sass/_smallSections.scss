@@ -33,11 +33,11 @@
         grid-template-columns: repeat(3, 1fr);
 
         a {
+            font-size: 1.75rem;
+            text-align: center;
+            line-height: 6rem;
             display: block;
             width: 100%;
-            font-size: 1.75rem;
-            line-height: 6rem;
-            text-align: center;
             border-right: $line solid black;
 
             &:hover {
@@ -54,14 +54,14 @@
 }
 
 footer {
-    width: 96%;
-    margin-left: 2%;
-    border-top: $line solid $primary;
     margin-top: 150px;
-}
+    margin-left: 2%;
+    width: 96%;
+    border-top: $line solid $primary;
 
-footer p {
-    width: 100%;
-    text-align: center;
-    line-height: 4rem;
+    p {
+        text-align: center;
+        line-height: 4rem;
+        width: 100%; 
+    }
 }
