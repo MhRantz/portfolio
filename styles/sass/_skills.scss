@@ -21,7 +21,7 @@ SKILLS SECTION
     position: relative;
 
      &::after {
-            content: " +";
+            content: "|";
             font-family: FontAwesome;
             position: absolute;
             font-size: 1.3rem;

@@ -6,32 +6,12 @@
     .projects h3 {
         margin-left: 125px;
     }
-    
-    .projectContent div a {
-        width: 275px;
-        height: 170px;
-    }
 }
 
 @media (max-width: 790px) {
     
     .projects h3 {
         font-size: 4rem;
-    }
-
-    .projectContent {
-        flex-direction: column-reverse;
-        width: 97%;
-        margin-left: 3%;
-    }
-
-    .projectContent p {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .projectContent div a {
-        margin: 0 0;
     }
 }
 
