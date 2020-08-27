@@ -6,7 +6,7 @@ const app = {}
 app.volumeContent = $('#volumeContent');
 app.volumeParent = $('#volumeParent');
 app.designOne = $('.designOnlyOne');
-app.projectDrop = $('.languagesUsed');
+app.projectDrop = $('.description');
 app.burger = $('#burger');
 ///GLOBALS
 app.volumeNum = 1

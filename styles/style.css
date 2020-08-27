@@ -392,106 +392,77 @@ PROJECTS SECTION
 
 .projectParent {
   width: calc(100% - 150px);
-  margin: -135px 0 0 150px;
+  margin: -111px 0 0 150px;
 }
 
 .project {
-  padding: 50px 0 0 7%;
+  margin-bottom: 50px;
 }
 
-.languagesUsed {
-  margin-top: 5px;
-  width: 98%;
-  position: relative;
+.project h4 {
+  font-size: 2rem;
+}
+
+.project .description {
+  width: 97%;
   border-bottom: 2px solid black;
+  position: relative;
 }
 
-.languagesUsed:after {
+.project .description::after {
   content: "+";
-  font-size: 1.6rem;
   position: absolute;
-  right: -17px;
-  bottom: -15px;
+  right: -18px;
+  bottom: -13px;
+  font-size: 1.5rem;
 }
 
-.languagesUsed li {
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.languagesUsed li:last-of-type {
-  padding: 5px;
-  border-left: 2px solid black;
-  cursor: pointer;
-}
-
-.languagesUsed li:last-of-type:hover {
-  color: #EEEAE9;
-  background-color: black;
+.project .description p {
+  margin: 10px 0;
+  width: 85%;
+  min-width: 300px;
 }
 
 .projectContent {
-  padding: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.projectContent p {
-  line-height: 1.3rem;
-  width: 40%;
-}
-
-.projectContent p a {
-  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 15px;
-  padding-top: 5px;
-  border-top: 2px solid black;
 }
 
-.projectContent div a {
-  width: 450px;
-  height: 275px;
-  margin: 0 10px;
-  padding: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.projectContent a {
+  font-size: 1.25rem;
+  padding: 10px 26px;
+  display: inline-block;
   border: 2px solid black;
 }
 
-.projectContent div a span {
-  display: none;
-}
-
-.projectContent div a:hover {
+.projectContent a:hover {
   background-color: black;
-}
-
-.projectContent div a:hover img {
-  display: none;
-}
-
-.projectContent div a:hover span {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 3.75rem;
-  text-align: center;
   color: #EEEAE9;
-  display: inline-block;
-  width: 450px;
 }
 
-h4 {
-  font-size: 1.75rem;
+.projectContent ul {
+  margin: 10px 0;
+}
+
+.projectContent ul li {
+  display: inline;
+}
+
+.projectContent ul li::after {
+  content: " + ";
+}
+
+.projectContent li:last-of-type::after {
+  content: "";
 }
 
 /**************************************************
@@ -521,7 +492,7 @@ SKILLS SECTION
 }
 
 .skills li::after {
-  content: " +";
+  content: "|";
   font-family: FontAwesome;
   position: absolute;
   font-size: 1.3rem;
@@ -591,30 +562,11 @@ SKILLS SECTION
   .projects h3 {
     margin-left: 125px;
   }
-  .projectContent div a {
-    width: 275px;
-    height: 170px;
-  }
 }
 
 @media (max-width: 790px) {
   .projects h3 {
     font-size: 4rem;
-  }
-  .projectContent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    width: 97%;
-    margin-left: 3%;
-  }
-  .projectContent p {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .projectContent div a {
-    margin: 0 0;
   }
 }
 
